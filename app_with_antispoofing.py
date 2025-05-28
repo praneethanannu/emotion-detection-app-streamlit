@@ -16,6 +16,7 @@ def is_real_face(image):
     with mp_face_mesh.FaceMesh(static_image_mode=True, max_num_faces=1) as face_mesh:
         results = face_mesh.process(cv2.cvtColor(image, cv2.COLOR_BGR2RGB))
         return results.multi_face_landmarks is not None
+        
 
 # Predict emotion
 def predict_emotion(img):
