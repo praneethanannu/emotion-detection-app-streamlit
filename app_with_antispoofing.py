@@ -2,7 +2,8 @@ import streamlit as st
 import cv2
 import numpy as np
 import mediapipe as mp
-from tensorflow.keras.models import load_model
+from keras.models import load_model
+
 
 # Load model
 model = load_model("best_model.h5")
